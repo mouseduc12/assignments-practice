@@ -1,0 +1,22 @@
+body{
+    background-color: #111111;
+  }
+  
+  h1 {
+      color: #E2E80F;
+      text-align: center;
+      font-size: large;
+  }
+  
+  p {
+      color: #eeeeee;
+  }
+
+  span{
+    text-decoration: underline;
+    color:#49DAFF;
+  } 
+
+  #film-description{
+      font-size: 10px;
+  }
