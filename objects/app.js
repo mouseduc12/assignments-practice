@@ -45,7 +45,20 @@ var container = [
     },
 
     shoes = {
-        name: "NIKKE",
+        name: {
+            brand: ["Nike", "Addidas", "Converse"],
+            call: function(){
+                return this.overLook.takeNote();
+            },
+            overLook: {
+                size: 32,
+                color: "red",
+                insideColor: "white",
+                takeNote: function(){
+                    console.log("Empty Note");
+                }
+            }
+        },
         bigBrand: true,
         slogan: "JUST DO IT",
         motivate: () => {console.log("JUST DO IT, DO ITTTTT!!!!!")}
@@ -75,7 +88,15 @@ var container = [
         percentage: 50,
         workHard: true,
         netWork: true,
-        teach: () => "Another day of working hard, strive the best" 
+        teach: function(){
+             function study(){
+                console.log("You have to study harder");
+            }   
+           return study()
+        }
+
     }
 ]
-
+console.log(jobProspecting.teach());
+console.log(container[jobProspecting.teach()]);
+console.log(container[shoes.name.call()]);
