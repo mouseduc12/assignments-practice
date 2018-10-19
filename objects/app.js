@@ -1,4 +1,4 @@
-var container = [
+/*var container = [
     person = {
         name: "John",
         age: 23,
@@ -97,6 +97,56 @@ var container = [
 
     }
 ]
-console.log(jobProspecting.teach());
-console.log(container[jobProspecting.teach()]);
-console.log(container[shoes.name.call()]);
+console.console.log(container[shoes.name.call()]);
+log(jobProspecting.teach());
+console.log(container[jobProspecting.teach()]); */
+
+var asiaCountries = {
+    location: "Southern East",
+    isWorkingHard: true,
+    isShort: true,
+    study: () => {return console.log("I've got to study harder")},
+    country:[
+    {
+        name: "China",
+        population: "1,5 billion",
+        economicRank: 2,
+        languages: { 
+            mainLanguge: "Mandarin",
+            secondLanguage: "Cantonesse"
+             }
+        },
+     {
+        name: "VietNam",
+        population: "94 million",
+        economicRank: 197,
+        languages: "Vietnamese"
+        },
+      {
+        name: "Laos",
+        population: "32 million",
+        economicRank: 201,
+        evironmentRank: 92,
+        languages: "Arabic"
+        }, 
+      {
+        name: "Indonesia",
+        population: "120 million",
+        economicRank: 74,
+        evironmentRank: 10,
+        languages: {
+            mainLanguage: "English",
+            secondLanguage: "Native languges"
+        }
+         },
+       {
+        name: "Singapore",
+        population: "64 million",
+        economicRank: 13,
+        evironmentRank: 1,
+        languages: "English"
+         },        
+    ]    
+}
+
+console.log(asiaCountries.country[3].languages['mainLanguage'])
