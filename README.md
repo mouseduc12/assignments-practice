@@ -1,1 +1,1 @@
-This module is V school projects. I'm pleased to be a part of such amazing group.
+This module is V school project. I'm pleased to be a part of such an amazing group.
