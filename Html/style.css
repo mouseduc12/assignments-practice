@@ -1,0 +1,31 @@
+#headline {
+    color: darkgreen;   
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sub-headline{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p {
+    line-height: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#like{
+    text-transform: uppercase;
+}
+
+img{
+    display: block;
+    float:left;
+    margin-right: 30px;
+}
