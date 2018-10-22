@@ -1,0 +1,32 @@
+#fixed-navbar{
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    position: fixed;
+}
+
+#blog-style{
+    position: relative;
+    display: inline-block;
+    margin: 100px 200px 10px 200px;
+    background-color: #ffb6c1;
+    width: 1044px;
+    top: 10px; 
+}
+
+.blog{
+    position: relative;
+}
+
+.blog-img{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+.blog-img img{
+    width: 150px;
+    height: 70px;    
+    border-radius: 50%;
+}
