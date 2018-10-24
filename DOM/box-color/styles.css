@@ -1,0 +1,12 @@
+#box{
+    position: relative;
+    height: 250px;
+    width: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    top: 50px;
+}
+
+h3{
+    text-align: center;
+}

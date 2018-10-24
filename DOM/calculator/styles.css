@@ -1,0 +1,53 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 10px;
+    background: #FFB6C1;
+}
+button{
+    height:35px;
+    font-size: 15px;
+    background: lime;
+}
+input{
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke
+}
+
+#first-form{
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid black
+}
+#first-form input{
+    height: 30px;
+    font-size: 15px;
+}
+
+#second-form{
+    position: absolute;
+    left: 500px;
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+#second-form input{
+    height: 30px;
+    font-size: 15px;
+}
+
+#third-form{
+    position: absolute;
+    right:0;
+    display: inline-block;
+    padding: 10px;
+    border-left: 1px solid black
+}
+#third-form input{
+    height: 30px;
+    font-size: 15px;
+}

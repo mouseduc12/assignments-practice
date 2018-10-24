@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <nav>
+            <div id="header">
+                <div id="span-block">
+                    <span style='color: red'>M</span>
+                    <span style='color: green'>A</span>
+                    <span style='color: yellow'>R</span>
+                    <span style='color: blue'>I</span>
+                    <span style='color: green'>O</span>     
+                </div>
+                <h2>Pest</h2>                          
+            </div>
+        </nav>
+    </head>
+    <body>
+        <div id="first-enemy">
+            <img src="https://vignette.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en">
+            <h1>GOOMBA</h1>
+            <h2>Value: $5</h2>
+            <button id="on-click">Let me talk!</button>
+            <p id="goomba-talk"></p>
+        </div>
+
+        <div id="second-enemy">
+            <img src="https://vignette.wikia.nocookie.net/nintendo/images/7/71/%E3%83%9C%E3%83%A0%E3%81%B8%E3%81%84_MK8DX.png/revision/latest?cb=20170605043314&path-prefix=ja">
+            <h1>BOB-OMB</h1>
+            <h2>Value: $7</h2>
+            <button id="second-on-click">Let me talk!</button>
+            <p id="bobomb-talk"></p>           
+        </div>
+
+        <div id="third-enemy">
+            <img src="https://vignette.wikia.nocookie.net/mario/images/c/c1/Cheep_Cheep%2C_New_Super_Mario_Bros._U.png/revision/latest?cb=20121106023911">
+            <h1>CHEEP-CHEEPS</h1>
+            <h2>Value: $11</h2>
+            <button id="third-on-click">Let me talk!</button>
+            <p id="cheep-talk"></p>    
+         </div>
+         
+         <h1 style="text-align: right">Fill the form to get paid!!!</h1>
+        <form name="add" id="calculate">
+            <div id="first-monster">
+                <img src="https://vignette.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en"/> <input id="goomba-money"name="Goomba" type="number" required>
+            </div>
+            <div id="second-monster">   
+                <img src="https://vignette.wikia.nocookie.net/nintendo/images/7/71/%E3%83%9C%E3%83%A0%E3%81%B8%E3%81%84_MK8DX.png/revision/latest?cb=20170605043314&path-prefix=ja"/><input id="bobomb-money" name="Bobomb" type="number" required>
+           </div>
+           <div id="third-monster">
+                <img src="https://vignette.wikia.nocookie.net/mario/images/c/c1/Cheep_Cheep%2C_New_Super_Mario_Bros._U.png/revision/latest?cb=20121106023911"/><input id="cheep-money" name="Cheepcheeps" type="number" required>
+            </div>
+            <button>Calculate Money</button>
+            <p id="amount">Calculating...</p>
+        </form>
+
+        <footer>
+            <h3>Email: <p>mario@yahoo.com</p></h3>
+            <h3>Website: <a href="https://mario.nintendo.com/" target="_blank">Click Here</a></h3>
+            <h3>Address:<p>445 Park Avenue, NY...</p></h3>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>
