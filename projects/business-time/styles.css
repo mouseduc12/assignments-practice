@@ -1,0 +1,30 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    position: relative;
+}
+h1{
+    font-size: 30px;
+    font-weight: 50px;
+}
+nav img{
+    top: 60px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+}
+nav h1{
+    display: inline-block;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul li{
+    
+}
