@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Limited Time. Travel at these three locations and get a discount of 50%</h1>
+    <form name="travelForm">
+        <div id="name">
+            FirstName: <input type="text" name="firstName" required>
+            LastName: <input type="text" name="lastName" required>
+            Age:<input type="number" name="age" required>
+        </div>
+
+        <div id="gender">
+            Male: <input type="radio" name="gender" value="Male">
+            Female: <input type="radio" name="gender" value="Female">
+        </div>
+
+        <div id="locations">
+        <input type="radio" name="location" value="Ohio" required> Ohio
+        <input type="radio" name="location" value="SaltLakeCity" required> Salt Lake City
+        <input type="radio" name="location" value="Dallas" required> Dallas
+        </div>
+
+        <div id="dietary">
+            <input type="checkbox" name="dietaryRestrictions" value="Kosher"> Kosher
+            <input type="checkbox" name="dietaryRestrictions" value="LactoseFree"> Lactose Free
+            <input type="checkbox" name="dietaryRestrictions" value="Vegetarian"> Vegetarian
+            <button>Submit</button>
+        </div>    
+    </form>
+    <script src="./app.js"></script>
+</body>
+</html>

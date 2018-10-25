@@ -1,0 +1,20 @@
+{
+  "name": "assignments-practice",
+  "version": "1.0.0",
+  "description": "This module is V school project. I'm pleased to be a part of such an amazing group.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouseduc12/assignments-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouseduc12/assignments-practice/issues"
+  },
+  "homepage": "https://github.com/mouseduc12/assignments-practice#readme"
+}

@@ -1,0 +1,27 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+
+#name{
+    margin: 10px
+}
+
+#location{
+    margin: 10px;
+}
+
+#gender{
+    margin: 10px;
+}
+
+#dietary{
+    margin: 10px 0px 10px 0px;
+}
+
+#dietary button{
+    display:block;
+    margin-top: 50px;
+    background: lightblue;
+}

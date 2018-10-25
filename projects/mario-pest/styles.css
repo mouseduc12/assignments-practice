@@ -173,6 +173,7 @@ span{
 
 }
 #first-monster img{
+    animation-duration: 4s;
     position: absolute;
     display: inline-block;
     width: 50px;
