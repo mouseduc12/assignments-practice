@@ -1,0 +1,84 @@
+{
+ "appetizers": ["milk", "cocktail", "salad", "soup"],
+ "cold sandwiches":[
+     {
+        "name": "Chicken Waldorf Sandwitches",
+        "ingredients": ["chicken", "Granny Smith apples", "celery", "mayonnaise", "yogurt"],
+        "make it": {
+            "step-one": "Combine everything",
+            "step-two": "Make sandwiches with bread and lettuce"
+        }   
+     },
+     {
+        "name": "Salami, Mozzarella + Roasted Red Pepper Sandwich",
+        "ingredients": ["Italian sub roll", "olive oil", "fresh mozzarella", "roasted red peppers", "genoa salami", "handful of fresh basil", "Salt and pepper to taste"],
+        "make it": {
+            "step-one": "Use a serrated knife to cut the Italian sub roll in half. Place sub roll on butcher or wax paper and drizzle both sides with a really nice olive oil.",
+            "step-two": "Add mozzarella to one-half and sprinkle with salt",
+            "step-three": "Add roasted red peppers, genoa salami, and a handful of fresh washed basil.",
+            "step-four": "Close the sandwich and tightly wrap the butcher or wax paper around it. Roll and cut down the middle. Serve immediately or wrap it up for later. ​The sandwich is good for 24 hours if refrigerated properly."            
+        } 
+     },
+     {
+        "name": "Caprese Sandwich with Tomato, Mozzarella + Fresh Basil",
+        "ingredients": ["Italian sub roll", "olive oil", "balsamic glaze", "3 thick slices fresh mozzarella", "2 tomatoes", "5 basil leaves","Salt and pepper to taste"],
+        "make it": {
+            "step-one": "Using a serrated knife, slice an Italian sub roll in half.",
+            "step-two": "Drizzle the inside with Italian extra virgin olive oil and balsamic glaze.",
+            "step-three": "Add basil and tomato to one side and sprinkle with salt and pepper"
+        }
+     }
+    ],
+    "hot sandwiches": [
+        {
+            "name" : "Tuna Melt",
+            "ingredients": ["English hothouse cucumber", "habanero chile or 2 jalapeños", "cup distilled white vinegar"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Smoked Brisket Tortas",
+            "ingredients": ["Refried Beans", "Iceberg slaw", "Brisket and Assembly"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Pressed Coppa Sandwiches with Broccoli Rabe Pesto",
+            "ingredients": ["Broccoli Rabe Pesto", "8 slices country-style bread"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        }
+    ],
+    "desserts": [
+        {
+            "name" : "Tuna Melt",
+            "ingredients": ["English hothouse cucumber", "habanero chile or 2 jalapeños", "cup distilled white vinegar"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Smoked Brisket Tortas",
+            "ingredients": ["Refried Beans", "Iceberg slaw", "Brisket and Assembly"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Pressed Coppa Sandwiches with Broccoli Rabe Pesto",
+            "ingredients": ["Broccoli Rabe Pesto", "8 slices country-style bread"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name" : "Tuna Melt",
+            "ingredients": ["English hothouse cucumber", "habanero chile or 2 jalapeños", "cup distilled white vinegar"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Smoked Brisket Tortas",
+            "ingredients": ["Refried Beans", "Iceberg slaw", "Brisket and Assembly"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        },
+        {
+            "name": "Pressed Coppa Sandwiches with Broccoli Rabe Pesto",
+            "ingredients": ["Broccoli Rabe Pesto", "8 slices country-style bread"],
+            "description": "Be sure to balance bold notes. In this pulled-back panino, Kuziemko uses a sharp provolone to cut the fat and the slightly sweet flavor of the copper, and honey to temper the spicy-bitter broccoli rabe pesto"
+        }
+    ]
+}
+

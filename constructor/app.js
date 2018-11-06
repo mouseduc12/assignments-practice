@@ -1,5 +1,5 @@
 var employees = ["John", "Scott", "Tyler", "Tim", "Eric"]
-var newEmployess = []
+
 function Employee(name, jobTitle, salary){
     this.name = name;
     this.jobTitle = jobTitle;
@@ -8,8 +8,12 @@ function Employee(name, jobTitle, salary){
     this.printEmployeeForm = function(){
         console.log(`Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`)
     }
-    this.generateEmployees = function(){
-        
+    this.generateEmployees = function(arr){
+        var newArr = [];
+        for(let i = 0 ; i < arr.length; i++){
+            newArr.push(arr[i] = new Employee(arr[i], "Chemist", "8000/d")); 
+        }
+        console.log(newArr)
     }
 }
 var john = new Employee(employees[0], "Student", 0)
@@ -24,4 +28,5 @@ var tim = new Employee(employees[3], "Software Engineer", "820/hour");
 console.log(tim.printEmployeeForm());
 var eric = new Employee(employees[4], "Full Stack Javascript", "800/hour");
 console.log(eric.printEmployeeForm());
+console.log(eric.generateEmployees(employees));
 

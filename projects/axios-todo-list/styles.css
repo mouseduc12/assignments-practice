@@ -1,0 +1,36 @@
+body{
+    background: rgba(255,218,185, 0.8)
+}
+
+.todo{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: teal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    font-size: 15px;
+}
+
+h1{
+    text-align: center;
+    color: plum;
+}
+
+h3,
+p{
+    font-weight: bold;
+}
