@@ -12,6 +12,14 @@ body{
     flex-direction: column;
     margin: 10px;
 }
+textarea {
+    font-size: 20px;
+    line-height: 25px;
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    height:100px;
+}
 
 input{
     display: block;
@@ -23,6 +31,9 @@ button{
     display: block;
     margin: 10px auto;
     font-size: 15px;
+    background: plum;
+    font-weight: 700;
+    border: 1px solid black;
 }
 
 h1{
@@ -33,4 +44,28 @@ h1{
 h3,
 p{
     font-weight: bold;
+    font-size: 20px;
 }
+
+.done{
+    text-decoration: line-through;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#price{
+    margin-bottom: 10px;
+}
+
+.edited-button{
+    background: salmon;
+}
+
+#changeIt{
+    display: none;
+}
+

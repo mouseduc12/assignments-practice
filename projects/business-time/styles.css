@@ -569,7 +569,6 @@ div#s-img {
     overflow: auto;
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.1);
-    display: flex;
     align-items: center;
 }
 .modal-content{
