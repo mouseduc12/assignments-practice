@@ -1,10 +1,22 @@
 *{
     box-sizing: border-box;
 }
+@font-face{
+    font-family: "NewOne";
+    src: url("./images/bebasneue_regular-webfont.woff");
+    font-weight: 100;
+}
 
+body{
+    font-family: "NewOne";
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
 #container{
     display: grid;
-    grid-template-rows: 960px auto 300px;
+    grid-template-rows: 960px auto 450px 250px;
 }
 
 ul#navigations{
@@ -34,21 +46,41 @@ div#brand-img{
     height: 72px;
     margin: 5px 20px;
 }
-nav > input{    
-    font-size: 15px;
-    height: 30px;
-    width: 200px;
-    margin: 10px auto;
+#search{
+    margin-top: 13px;   
+    display: flex;
+    justify-content: center;
 }
-div#slides-img{
+#search input{
+    width: 50%;
+    height: 30px;
+}
+#search button{
+    height: 30px
+}
+#search button:after{
+  font-family: FontAwesome;
+  content: "\f002";
+}
+div.slides-img{
     grid-row: 3;
-    background-image: url("./images/hotgirl.jpg");
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/slider-pic3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
+    height: 100%;   
     display: flex;
     align-items: flex-end;
+}
+#second-slides-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/DSC_0192.jpg");
+}
+#third-slides-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/DSC_0081.jpg");
+}
+#fourth-slides-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/05/skin1.jpg");
 }
 #space-email{
     height: 50px;
@@ -65,7 +97,10 @@ div#slides-img{
 #space-email > button{
     height: 23px;
 }
-
+#space-email > button:after{
+    font-family: FontAwesome;
+    content: "\f003";
+}
 #body{
     grid-row: 2/3;
     display: grid;
@@ -73,14 +108,9 @@ div#slides-img{
     grid-auto-rows: auto;
     margin-top: 30px;
 }
-
 .the-contents{
     grid-column: 2;
     margin-top: 50px;
-}
-.the-contents:nth-child(3){
-    position: relative;
-    bottom: 100px;
 }
 .date{
     display: flex;
@@ -91,7 +121,10 @@ div#slides-img{
     width: 30%;
     height: 1px;
 }
-.the-contents > h1, p{
+.the-contents > h1{
+    text-align: center;
+}
+.the-contents > p{
     text-align: center;
 }
 .img-contents{
@@ -101,14 +134,53 @@ div#slides-img{
     width: 100%;
     height: 823px;
 } 
+#img-contents-2{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/10/microneedling-results.jpg");
+}
+#img-contents-3{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/10/DSC_0401.jpg");
+}
+#img-contents-4{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/DSC_1291.jpg");
+}
+#img-contents-5{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/10/every-day-makeup_.jpg");
+}
+#img-contents-6{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/DSC_1255-1.jpg");
+}
+#img-contents-7{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/Ovararian-Cancer-Awarness-Month-1.jpg");
+}
+#img-contents-8{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/08/smashbox-cover-shot-palette-5.jpg");
+}
+#img-contents-9{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/08/dermaplaning-1.jpg");
+}
+#img-contents-10{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/11/DSC_0372.jpg");
+}
 .the-contents button{
     display: block;
     margin: 0 auto;
+    height: 35px;
+    background-color: rgba(255,255,255, 0.1); 
+    color: silver;
+    font-size: 15px;
+    padding: 0 25px;
 }
 .comment{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    align-items: center   
+}
+.media{
+    color: peachpuff;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
 }
 .related-tag{
     display: flex;
@@ -124,18 +196,144 @@ div#slides-img{
     justify-content: space-evenly;
     width: 100%;
 }
-
 .related-img{
   width: 23.5%;
-  height: 140px;
+  height: 120px;
   background-image: url("./images/hotgirl.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;  
+}
+#first-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/06/IMG_5374-120x120.jpg");
+}
+#second-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/01/green-power-smoothie8-120x120.jpg");
+}
+#third-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/12/hair-care2-120x120.jpg");
+}
+#fourth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/Ovararian-Cancer-Awarness-Month-1-120x120.jpg");
+}
+#fifth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/03/chemical-peel-3-120x120.jpg");
+}
+#sixth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/12/DSC_0498-120x120.jpg");
+}
+#seventh-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/04/chemical-peel-review-120x120.jpg");
+}
+#eighth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2013/12/winter-makeup-tutorial-mychicbump-682x1024-120x120.jpg");
+}
+#ninth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/02/lashes2-120x120.jpg");
+}
+#tenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/12/DSC_0498-120x120.jpg");
+}
+#eleventh-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/12/Holiday-Look-3-green-eyeshadow-120x120.jpg");
+}
+#twelfth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/04/aubrey-brown-smokey-eye-1-copy-120x120.jpg");
+}
+#thirteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/02/lashes2-120x120.jpg");
+}
+#fourteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/pur7-120x120.jpg");
+}
+#fifteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/12/Holiday-Look-3-green-eyeshadow-120x120.jpg");
+}
+#sixteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/01/DSC_0390-120x120.jpg");
+}
+#seventeenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/06/pic1-120x120.jpg");
+}
+#eighteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/purple1-120x120.jpg");
+}
+#ninteenth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/11/san-francisco-2-120x120.jpg");
+}
+#twentieth-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/Ovararian-Cancer-Awarness-Month-1-120x120.jpg");
+}
+#twentiethone-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/05/skin8-120x120.jpg");
+}
+#twentiethtwo-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/10/daytime-smokey-eye-tutorial1-120x120.jpg");
+}
+#twentieththree-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/03/DSC_0165-120x120.jpg");
+}
+#twentiethfour-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/09/DSC_0206-copy-120x120.jpg");
+}
+#twentiethfive-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/purple1-120x120.jpg");
+}
+#twentiethsix-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/08/washington-682x1024-120x120.jpg");
+}
+#twentiethseven-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/04/legs-post-120x120.jpg");
+}
+#twentietheight-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/09/DSC_0009-120x120.jpg");
+}
+#twentiethnine-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/02/primer3-120x120.jpg");
+}
+#thirty-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/08/DSC_0333-120x120.jpg");
+}
+#thirtyone-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/12/DSC_0498-120x120.jpg");
+}
+#thirtytwo-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/02/fresh-look-1-120x120.jpg");
+}
+#thirtythree-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/05/top-5-foundations-collage-120x120.jpg");
+}
+#thirtyfour-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2016/06/DSC_0292-120x120.jpg");
+}
+#thirtyfive-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/10/DSC_1013-120x120.jpg");
+}
+#thirtysix-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/05/IMG_4997-120x120.png");
+}
+#thirtyseven-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/01/DSC_0049-120x120.jpg");
+}
+#thirtyeight-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2017/10/DSC_0833-120x120.jpg");
+}
+#thirtynine-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2018/09/DSC_1255-1-120x120.jpg");
+}
+#forty-thumbnail-img{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2015/12/hair-care2-120x120.jpg");
 }
 .related > hr{
     width: 100%;
 }
+#follow-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
 #aside{
     margin-top: 50px;
     grid-row: 1/-1;
@@ -146,35 +344,263 @@ div#slides-img{
     justify-content: space-between;   
 }
 #follow-box{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgba(1,1,1,0.3);
     height: 60px;
     margin-bottom: 30px;  
 }
 #aside span{
-    margin-top: -13px;
-    background: white;
+    position: relative;
+    text-align: center;
+    padding: 0 10px;
+    background-color: white;    
+    top: -13px;
+    left: 39%;
+    font-size: 20px;
+}
+#aside input{
     font-size: 20px;
 }
 #subcribe-box{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgba(1,1,1,0.3);
     height: 100px;  
     margin-bottom: 20px; 
 }
+#subcribe-box > p{
+    font-size:15px; 
+    text-align: center;
+}
+#subcribe-box-email{
+    margin-top: 21px;
+    padding: 0 20px;
+}
+#subcribe-box-email input{
+    font-size: 15px;
+    width: 88%;
+    border: none;
+}
+#subcribe-box-email button{
+    font-size: 15px;
+    width: 10%;
+    border: none;
+}
+#subcribe-box-email button:after{
+    font-family: FontAwesome;
+    content: "\f003"; 
+}
 #wish-list{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgba(1,1,1,0.3);;
     height: 500px;
     margin-bottom: 20px;   
 }
-#favorite{
+#arrows{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+#left-arrow{
+    border: none;
+    font-size: 25px;
+}
+#right-arrow{
+    border: none;
+    font-size: 25px;
+}
+#left-arrow:after{
+    font-family: FontAwesome;
+    content: "\f104"; 
+}
+#right-arrow:after{
+    font-family: FontAwesome;
+    content: "\f105"; 
+}
+#favorite{
+    border: 1px solid rgba(1,1,1,0.3);
+    height: 950px;
+    margin-bottom: 20px;    
+}
+#brands{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 140px 267px 120px 150px 150px 79px
+}
+#logo-1{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/nordstrom-logo.jpeg");
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo-2{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/gap-logo.jpg");
+    grid-row: 2/3;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo-3{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/kate-spade-logo.png");
+    grid-row: 3/4;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo-4{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/j.crew-logo.jpg");
+    grid-row: 4/5;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo-5{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/asos-logo.jpg");
+    grid-row: 5/6;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo-6{
+    background-image: url("http://kandjdiaries.com/wp-content/uploads/2014/09/sephora-logo.jpg");
+    grid-row: 6/7;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+footer{
+    margin-top: 50px;
+    grid-column: 1/-1;
+}
+#footer-button{
+    display: flex;
+    margin-top: 10px;
     justify-content: center;
-    border: 1px solid black;
-    height: 900px;
-    margin-bottom: 20px;   
+}
+#footer-button button{
+    height: 30px;
+    margin-right: 10px;
+}
+footer #insta-contents{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10%);
+    grid-template-rows: repeat(2, 150px);
+}
+#insta-contents .insta-images{
+    background-image: url("./images/hotgirl.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#insta-contents #footer-img-1{
+    background-image: url("https://scontent.cdninstagram.com/vp/c057a1b3bbc57fe4cdf8c8ab92c75294/5C84808B/t51.2885-15/e35/p320x320/44485525_252133052327567_994202306647716276_n.jpg");
+}
+#insta-contents #footer-img-2{
+    background-image: url("https://scontent.cdninstagram.com/vp/f5a256b4057d456bf92d92203f214325/5C7DD29D/t51.2885-15/e35/p320x320/43597828_573871373044895_3024043605793230161_n.jpg");
+}
+#insta-contents #footer-img-3{
+    background-image: url("https://scontent.cdninstagram.com/vp/90e6fc59c46be4ed626d5da811965d6b/5C7BFF98/t51.2885-15/e35/p320x320/43914328_344635026298307_4671145372300925299_n.jpg");
+}
+#insta-contents #footer-img-4{
+    background-image: url("https://scontent.cdninstagram.com/vp/a8e1f96f5ebbf5a29a3089c955857105/5C7136F0/t51.2885-15/e35/p320x320/42669833_2280843245470308_7480484914970884772_n.jpg");
+}
+#insta-contents #footer-img-5{
+    background-image: url("https://scontent.cdninstagram.com/vp/7f25adfdb6f1fe6c22fddd6c1597e1f0/5C66E8CD/t51.2885-15/e35/p320x320/44600310_1979318062360672_5342356300338905538_n.jpg");
+}
+#insta-contents #footer-img-6{
+    background-image: url("https://scontent.cdninstagram.com/vp/27f12a73e4deffa25625d19f1262ed8b/5C7244CD/t51.2885-15/e35/p320x320/42830665_258244861554095_6487581640038818760_n.jpg");
+}
+#insta-contents #footer-img-7{
+    background-image: url("https://scontent.cdninstagram.com/vp/0a7209d8c62eee0f63e7861612c8ca5b/5C66F955/t51.2885-15/e35/p320x320/44436326_2105355983127003_1304558386512426592_n.jpg");
+}
+#insta-contents #footer-img-8{
+    background-image: url("https://scontent.cdninstagram.com/vp/47f776e4e7d226fb7b95e2a2aa37d923/5C816F57/t51.2885-15/e35/p320x320/44462134_734704650221465_4320690167329760387_n.jpg");
+}
+#insta-contents #footer-img-9{
+    background-image: url("https://scontent.cdninstagram.com/vp/e82cb73eaf65a3290d9b3fe69d556c22/5C7D8460/t51.2885-15/e35/s320x320/44458961_545651212523023_5306616149348197196_n.jpg");
+}
+#insta-contents #footer-img-10{
+    background-image: url("https://scontent.cdninstagram.com/vp/b4e89e5d233d9df68096918b0cd3f9d8/5C703C75/t51.2885-15/e35/p320x320/44239390_152514692375039_9015177491692826799_n.jpg");
+}
+#insta-contents #footer-img-11{
+    background-image: url("https://scontent.cdninstagram.com/vp/8f2423192b7892b223a54f36dc7b2c71/5C77CAB5/t51.2885-15/e35/p320x320/43914301_2146738115592877_66715473619476254_n.jpg");
+}
+#insta-contents #footer-img-12{
+    background-image: url("https://scontent.cdninstagram.com/vp/361db12bbeebeb5370f8f233b9ad5038/5C7A9D12/t51.2885-15/e35/p320x320/44299007_249135779113486_5537925701923676707_n.jpg");
+}
+#insta-contents #footer-img-13{
+    background-image: url("https://scontent.cdninstagram.com/vp/1c4f0cc02d029def71b947951e50e668/5C6AF4CA/t51.2885-15/e35/s320x320/43721656_348895302522072_3797070138755916754_n.jpg");
+}
+#insta-contents #footer-img-14{
+    background-image: url("https://scontent.cdninstagram.com/vp/901ee62f667a8c9112f23463df43dcd8/5C679BD9/t51.2885-15/e35/p320x320/44752225_1940013269633393_7103283609333789731_n.jpg");
+}
+#insta-contents #footer-img-15{
+    background-image: url("https://scontent.cdninstagram.com/vp/6ff17e2576e215b43a8d0873f6efbc77/5C6DDBA3/t51.2885-15/e35/p320x320/44312880_294831834462639_7630651379299865673_n.jpg");
+}
+#insta-contents #footer-img-16{
+    background-image: url("https://scontent.cdninstagram.com/vp/3ac02ce4e687303b5fc88df6c1248cec/5C72CA4C/t51.2885-15/e35/s320x320/43914257_309816986507012_785557668950525168_n.jpg");
+}
+#insta-contents #footer-img-17{
+    background-image: url("https://scontent.cdninstagram.com/vp/42ca7a357fa12fc5f827ae5cc22da138/5C826E0F/t51.2885-15/e35/s320x320/43667763_150275105928757_3713124253192817150_n.jpg");
+}
+#insta-contents #footer-img-18{
+    background-image: url("https://scontent.cdninstagram.com/vp/332e7c50f8533f7b87d65cf14b31bd3f/5C754DEE/t51.2885-15/e35/p320x320/43418852_285959155356263_8459437568022261928_n.jpg");
+}
+#insta-contents #footer-img-19{
+    background-image: url("https://scontent.cdninstagram.com/vp/3ff73d9cad0d42296c07228d79f1a42c/5C6E044E/t51.2885-15/e35/p320x320/43083040_2046425182335974_4392165050373220428_n.jpg");
+}
+#insta-contents #footer-img-20{
+    background-image: url("https://scontent.cdninstagram.com/vp/cb65dd790e7dcc93d52a7b6f02b0c7fc/5C7039C2/t51.2885-15/e35/p320x320/43625954_604934916570140_2909677870016710383_n.jpg");
+}
+#showoff-footer{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+div#advertising-bar{
+    grid-row: 2/3;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-button button:nth-child(1){
+    background-color: rgba(1,1,1,0.7);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100px;
+}
+#footer-button button:nth-child(2){
+    background-color: rgba(96,120,128,1);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 160px;
+}
+#insta-infos{
+    display: inline-block;
+}
+#insta-infos p:nth-child(1){
+    height:0;
+}
+#insta-owner{
+    background-image: url('https://scontent.cdninstagram.com/vp/5902e6ead8b2b26fecfcab7f756481e3/5C6F3BF4/t51.2885-19/s150x150/20213801_1965957857018175_2109941420470042624_a.jpg');
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    width:50px;
+    height:50px; 
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+#footer{
+    font-weight: 100;
+}
+#footer-button button:nth-child(2):before{
+    font-family: FontAwesome;
+    content: "\f16d";
+    margin-right: 5px;
+    color: black
+}
+#advertising-bar > p{
+    color: rgba(255,255,255, 0.7);
+    font-size: 15px;
 }

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.nav h2{
+    width: 50%;
+    text-align: center;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+ul.left-bar{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.left-bar li{
+    list-style: none;
+    padding: 0 ;
+    margin: 0 25px;
+}

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
@@ -21,12 +23,33 @@
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <input type="text" placeholder="Search" required>
+                <div id="search">
+                    <input type="text" placeholder="Search" required>
+                    <button></button>
+                </div>
             </nav>
-            <div id="slides-img">
+            <div class="slides-img">
                 <div id="space-email">
-                    <input type="email" required placeholder="email@">
-                    <button>Submit</button>
+                    <input type="email" required placeholder="EMAIL ADDRESS">
+                    <button></button>
+                </div>
+            </div>
+            <div class="slides-img" id="second-slides-img">
+                <div id="space-email">
+                    <input type="email" required placeholder="EMAIL ADDRESS">
+                    <button></button>
+                </div>
+            </div>
+            <div class="slides-img" id="third-slides-img">
+                <div id="space-email">
+                    <input type="email" required placeholder="EMAIL ADDRESS">
+                    <button></button>
+                </div>
+            </div>
+            <div class="slides-img" id="fourth-slides-img">
+                <div id="space-email">
+                    <input type="email" required placeholder="EMAIL ADDRESS">
+                    <button></button>
                 </div>
             </div>
         </header>
@@ -34,35 +57,61 @@
             <div id="aside">
                 <div id="follow-box">
                     <span>Follow</span>
+                    <div id="follow-icon">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest-square"></i>
+                    </div>
                 </div>
                 <div id="subcribe-box">
                     <span>Subcribe</span>
+                    <p>Be the first to know...</p>
+                    <div id="subcribe-box-email">
+                        <input type="email" required placeholder="EMAIL ADDRESS">
+                        <button></button>
+                    </div>
                 </div>
                 <div id="wish-list">
                     <span>WishList</span>
+                    <div id="arrows">
+                        <button id="left-arrow"></button>
+                        <button id="right-arrow"></button>
+                    </div>
                 </div>
                 <div id="favorite">
                     <span>Favorite</span>
+                    <div id="brands">
+                        <div id="logo-1"></div>
+                        <div id="logo-2"></div>
+                        <div id="logo-3"></div>
+                        <div id="logo-4"></div>
+                        <div id="logo-5"></div>
+                        <div id="logo-6"></div>
+                    </div>
                 </div>
                 <input type="text" placeholder="Archive">
             </div>
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>NOV 12, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>TOP 5 SKIN CARE PRODUCTS THAT ACTUALLY WORK!</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-10"></div>
+                <p>My skin: Acne-prone. Sensitive. Combination skin, Oil T zone and Normal to dry on the sides of my
+                    face. Who is clicking on this post and thinking “FINALLY!”? I know it took me a while but I am
+                    making it up to you by writing a very detailed post about my top skin care […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -72,10 +121,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="thirtyseven-thumbnail-img"></div>
+                        <div class="related-img" id="thirtyeight-thumbnail-img"></div>
+                        <div class="related-img" id="thirtynine-thumbnail-img"></div>
+                        <div class="related-img" id="forty-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -96,7 +145,11 @@
                     digestive issues such […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -106,10 +159,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="first-thumbnail-img"></div>
+                        <div class="related-img" id="second-thumbnail-img"></div>
+                        <div class="related-img" id="third-thumbnail-img"></div>
+                        <div class="related-img" id="fourth-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -117,20 +170,24 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>OCT 30, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>MICRONEEDLING FOR THE THIRD TIME/ WHERE DID I BUY THOSE PEARL EARRINGS?</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-2"></div>
+                <p> I’m not sure what to talk about first. Where I got my earrings or a skin update after getting
+                    Microneedling done for the third time! I’m happy to talk about both subjects haha. The biggest
+                    things Microneedling has done for me is the improvement and the change in my skin texture. I saw
+                    results with Microneedling […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -140,10 +197,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="fifth-thumbnail-img"></div>
+                        <div class="related-img" id="sixth-thumbnail-img"></div>
+                        <div class="related-img" id="seventh-thumbnail-img"></div>
+                        <div class="related-img" id="eighth-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -151,20 +208,24 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>OCT 22, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>CMY FIRST BOXYCHARM BOX. WAS IT WORTH IT?</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-3"></div>
+                <p>Like many of you, I have thought about it, looked at their Instagram account daily and searched
+                    their hashtag on social media for a while before finally signing up for the monthly subscription
+                    box! You are probably want to know what to expect if you were to sign up as well! You get to try
+                    […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -174,10 +235,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="ninth-thumbnail-img"></div>
+                        <div class="related-img" id="tenth-thumbnail-img"></div>
+                        <div class="related-img" id="eleventh-thumbnail-img"></div>
+                        <div class="related-img" id="twelfth-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -185,20 +246,25 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>OCT 18, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>NEW EYE MAKEUP TUTORIAL USING DRUGSTORE PRODUCTS / MAYBELLINE
+                </h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-4"></div>
+                <p>Maybelline Lemonade Craze Palette / Maybelline Super Stay Matte Ink “Fighter” Hey girls! It’s a
+                    beautiful sunny day today! You guys know I have been trying to find good drugstore products for the
+                    several months. I always reach for high end products but I know that drugstore brands work just as
+                    hard to create great […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -208,10 +274,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="thirteenth-thumbnail-img"></div>
+                        <div class="related-img" id="fourteenth-thumbnail-img"></div>
+                        <div class="related-img" id="fifteenth-thumbnail-img"></div>
+                        <div class="related-img" id="sixteenth-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -219,20 +285,23 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>OCT 11, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>TURNING 30 IN 30 DAYS. SHARING MY GOALS FOR THE MONTH OF OCTOBER!</h1>
+                <p><i>Lifestyle</i></p>
+                <div class="img-contents" id="img-contents-5"></div>
+                <p> I cannot believe there is only one month before I turn 30! For most of my friends, reaching 30 was
+                    not the most exciting thing but I have been looking forward to turning 30 for a few years now. I
+                    want to go into depth as to why that is but I will leave that […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -242,10 +311,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="seventeenth-thumbnail-img"></div>
+                        <div class="related-img" id="eighteenth-thumbnail-img"></div>
+                        <div class="related-img" id="ninteenth-thumbnail-img"></div>
+                        <div class="related-img" id="twentieth-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -253,20 +322,24 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>SEP 20, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>TESTING SKINCARE PRODUCTS: DRUNK ELEPHANT/DERMA E</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-6"></div>
+                <p>Derma E Anti-Wrinkle Cleanser/ Derma E Sun Defense Mineral Oil-Free Sunscreen Drunk Elephant Protini
+                    Polypeptide Cream Happy Thursday everyone! It’s been a minute since my last blog post and I wanted
+                    to share with you three new skincare products I am testing right now: The Drunk Elephant Protini
+                    Polypeptide Cream, the Derma E Anti-Wrinkle […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -276,10 +349,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="twentiethone-thumbnail-img"></div>
+                        <div class="related-img" id="twentiethtwo-thumbnail-img"></div>
+                        <div class="related-img" id="twentieththree-thumbnail-img"></div>
+                        <div class="related-img" id="twentiethfour-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -287,20 +360,24 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>SEP 04, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>OVARIAN CANCER AWARENESS MONTH- SHOP FOR A CAUSE</h1>
+                <p><i>Beauty, Lifestyle</i></p>
+                <div class="img-contents" id="img-contents-7"></div>
+                <p>Another month has come and gone! This month of September is extra important because it is Ovarian
+                    Cancer Awareness Month. Laura Mercier started the Laura Mercier Ovarian Cancer Fund in 2012 and
+                    they are dedicated in supporting those who are fighting this disease. Did you know that 1 in 75
+                    women will develop Ovarian Cancer […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -310,10 +387,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="twentiethfive-thumbnail-img"></div>
+                        <div class="related-img" id="twentiethsix-thumbnail-img"></div>
+                        <div class="related-img" id="twentiethseven-thumbnail-img"></div>
+                        <div class="related-img" id="twentietheight-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -321,20 +398,24 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>AUG 17, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>MAKEUP REVIEW: NEW SMASHBOX COVER SHOT EYE SHADOW PALETTES</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-8"></div>
+                <p>If you like to shop at Sephora click here. Or if you like to shop at Ulta click here. Smashbox
+                    recently released new eyeshadow palettes adding more to the Cover Shot collection! I find these
+                    very convenient because of their size. You can pretty much store it anywhere! But the most
+                    important reason why these are so great to […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -344,10 +425,10 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="twentiethnine-thumbnail-img"></div>
+                        <div class="related-img" id="thirty-thumbnail-img"></div>
+                        <div class="related-img" id="thirtyone-thumbnail-img"></div>
+                        <div class="related-img" id="thirtytwo-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
@@ -355,20 +436,23 @@
             <div class="the-contents">
                 <div class="date">
                     <p>
-                        <hr>NOV 05, 2018
+                        <hr>AUG 08, 2018
                         <hr>
                     </p>
                 </div>
-                <h1>CUCUMBER JUICE CHALLENGE / BEAUTIFYING MY SKIN FROM THE INSIDE OUT</h1>
-                <p><i>Beauty, Recipes</i></p>
-                <div class="img-contents"></div>
-                <p>Fresh cucumber juice is naturally sweet and delicious! Specially if I compare it to other green
-                    juices I have made in the past haha. Did yo know that cucumbers are 96% water? Cucumber juice is
-                    highly hydrating. It has the amazing ability to cleanse and detox the entire body and help with
-                    digestive issues such […]</p>
+                <h1>WHAT IS DERMAPLANING?</h1>
+                <p><i>Beauty</i></p>
+                <div class="img-contents" id="img-contents-9"></div>
+                <p>No foundation. No concealer. No powders. Just a little bit of cream products on my skin and my
+                    favorite lip balm on my lips. It basically helps your skin feel and look smooth by getting rid of
+                    the facial hair/fuzz. But wait, there is more to it than you think! Dermaplaning is great for […]</p>
                 <button>READ MORE</button>
                 <div class="comment">
-                    <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                    <div class="media">
+                        <i class="fa fa-twitter" style="font-size:32px"></i>
+                        <i class="fa fa-pinterest" style="font-size:32px"></i>
+                        <i class="fa fa-facebook-square" style="font-size:32px"></i>
+                    </div>
                     <p><b><i>0</i></b> comment</p>
                 </div>
                 <div class="related">
@@ -378,18 +462,60 @@
                         <hr>
                     </div>
                     <div class="image-container">
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
-                        <div class="related-img"></div>
+                        <div class="related-img" id="thirtythree-thumbnail-img"></div>
+                        <div class="related-img" id="thirtyfour-thumbnail-img"></div>
+                        <div class="related-img" id="thirtyfive-thumbnail-img"></div>
+                        <div class="related-img" id="thirtysix-thumbnail-img"></div>
                     </div>
                     <hr>
                 </div>
             </div>
         </div>
         <footer>
+            <h3 style="text-align: center">K&J Instagram</h3>
+            <div id="insta-name">
+                <div id="insta-owner"></div>
+                <div id="insta-infos">
+                    <p><i>@kandjdiaries</i></p>
+                    <p><i>Blogger | Makeup Artist | Photographer | Creative Director 💗✉️: info@kandjdiaries.com
+                            👻:jessicahinkson8 📺🎥 watch IG stories for tutorials!Jessica Hinkson 🇺🇸🇵🇪💫</i></p>
+                </div>
+            </div>
+            <div id="insta-contents">
+                <div class="insta-images" id="footer-img-1"></div>
+                <div class="insta-images" id="footer-img-2"></div>
+                <div class="insta-images" id="footer-img-3"></div>
+                <div class="insta-images" id="footer-img-4"></div>
+                <div class="insta-images" id="footer-img-5"></div>
+                <div class="insta-images" id="footer-img-6"></div>
+                <div class="insta-images" id="footer-img-7"></div>
+                <div class="insta-images" id="footer-img-8"></div>
+                <div class="insta-images" id="footer-img-9"></div>
+                <div class="insta-images" id="footer-img-10"></div>
+                <div class="insta-images" id="footer-img-11"></div>
+                <div class="insta-images" id="footer-img-12"></div>
+                <div class="insta-images" id="footer-img-13"></div>
+                <div class="insta-images" id="footer-img-14"></div>
+                <div class="insta-images" id="footer-img-15"></div>
+                <div class="insta-images" id="footer-img-16"></div>
+                <div class="insta-images" id="footer-img-17"></div>
+                <div class="insta-images" id="footer-img-18"></div>
+                <div class="insta-images" id="footer-img-19"></div>
+                <div class="insta-images" id="footer-img-20"></div>
+            </div>
+            <div id="footer-button">
+                <button><i>Load More...</i></button>
+                <button><i>Follow on Instagram</i></button>
+            </div>
         </footer>
+        <div id="showoff-footer">
+            <div id="advertising-bar">
+                <p>Designed and Developed by Duc</p>
+                <p>© K & J Diaries 2018. All Rights Reserved</p>
+            </div>
+        </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>

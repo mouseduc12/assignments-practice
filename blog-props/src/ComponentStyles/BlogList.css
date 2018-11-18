@@ -1,0 +1,38 @@
+body{
+    font-family: "Lora";
+}
+.blog-list{
+    width: 50%;
+}
+
+.blog-list h1{
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+.blog-list h2{
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+.blog-list h1:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+
+.blog-list h2:hover{
+    color: darkcyan;
+    cursor: pointer;
+}
+
+.blog-list h5{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: silver;
+}
+
+@media screen and (max-width: 768px){
+    .blog-list{
+        width: 75%;
+    }
+}
