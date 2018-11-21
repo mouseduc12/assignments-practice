@@ -45,7 +45,7 @@ function swordClashing(){
 
 var meetEnemy;
 function encounterEnemy(){
-    meetEnemy = sound.play("./sound-effect/Heroes of Might & Magic III Complete Edition - All Sound Effects (HD) (mp3cut.net) (1).mp3", function(err){
+    meetEnemy = sound.play("./sound-effect/Heroes of Might & Magic III Complete Edition (1).mp3", function(err){
         if(err && !err.killed) throw err
     });
 }
