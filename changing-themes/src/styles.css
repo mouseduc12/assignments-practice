@@ -1,0 +1,17 @@
+.dark-header {
+    text-align: center;
+    background-color: #333;
+    height: 30vh;
+    margin: -25px;
+    padding: 50px;
+    color: salmon;
+}
+
+.light-header {
+    text-align: center;
+    background-color: whitesmoke;
+    height: 30vh;
+    margin: -25px;
+    padding: 50px;
+    color: darkcyan;
+}

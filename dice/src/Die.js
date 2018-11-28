@@ -1,18 +1,15 @@
 import React from "react";
 
-class Die extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            cah
-        }
+class Die extends React.Component {
+    constructor(props) {
+        super(props);
     }
-    render(){
-    return(
-        <div>
-            <h1>{this.props.each}</h1>
-        </div>
-    )
+    render() {
+        return (
+            <div onClick = {() => this.props.selectDie(this.props.name)}>
+                <h1>{this.props.dice}</h1>
+            </div>
+        )
     }
 }
 
